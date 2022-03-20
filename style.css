@@ -127,14 +127,14 @@ a {
   z-index: 1000;
   width: 60px;
   border-right: 1px dashed rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.0875rem;
   font-size: 10px;
   transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
 }
 .side:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
 }
 .side .side__inner {
   position: relative;
@@ -166,10 +166,10 @@ a {
   bottom: 75px;
 }
 .side .bottom:hover a {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.2);
 }
 .side .bottom:hover a:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /**
