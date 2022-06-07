@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: soleil, "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   color: rgb(255, 255, 255);
   font-size: 16px;
   background-color: #000;
@@ -230,7 +230,7 @@ a {
   min-height: 60vh;
   width: 100%;
   align-content: center;
-  padding: 20vh 50px 20vh 120px;
+  padding: 10vh 10vh 4vh 10vh;
 }
 .section svg {
   position: absolute;
@@ -255,7 +255,7 @@ a {
   color: #ffffff;
 }
 .section.section--intro {
-  background-color: #0f0f0f;
+  background-color: #000000;
   color: rgb(255, 255, 255);
 }
 .section.section--about {
@@ -266,7 +266,7 @@ a {
   fill: #de5f5f;
 }
 .section.section--clients {
-  background-color: #0f0f0f;
+  background-color: #000000;
   color: white;
 }
 .section.section--clients svg {
@@ -308,7 +308,7 @@ a {
  * Typo
  */
 h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
-  font-weight: bold;
+  font-weight: 700;
   margin: 0 0 1em;
   line-height: 1.2;
 }
@@ -332,16 +332,16 @@ h1, .h1 {
 }
 @media (min-width: 30rem) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
 h2, .h2 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
 }
 @media (min-width: 30rem) {
   h2, .h2 {
-    font-size: 2.5rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -368,13 +368,13 @@ h2, .h2 {
 p {
   font-size: 0.875rem;
   line-height: 1.4;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   word-wrap: break-word;
 }
 @media (min-width: 30rem) {
   p {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
   }
   p a {
     font-size: 0.6rem;}
@@ -382,8 +382,8 @@ p {
 p a {
   font-size: 0.8rem;
   font-weight: 700;
-
-  color: inherit;
+  line-height: 1.4;
+  color: #ffffff;
 }
 @media (min-width: 30rem) {
   p a {
@@ -395,9 +395,42 @@ p a:hover {
 
 .lead {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.55rem;
+  line-height: 2;
+  color: #666;
   /* margin: 0; */
 }
+@media (min-width: 30rem) {
+  .lead {
+    font-size: 0.55rem;
+  }
+}
+
+.portfolio {
+  font-size: 0.75rem;
+}
+.portfolio.block {
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 30rem) {
+  .portfolio.block {
+    width: 30%;
+  }
+}
+.portfolio .link {
+  display: block;
+  margin: 2em 0 0 0;
+  color: #555;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+.portfolio p {
+  font-size: inherit;
+  color: #343436;
+  opacity: 0.7;
+}
+
 #c1 :hover::after {
   content:'';
   width:600px;
@@ -613,34 +646,4 @@ p a:hover {
   top: center;
   left:center;
   z-index:99999;
-}
-@media (min-width: 30rem) {
-  .lead {
-    font-size: 0.6rem;
-  }
-}
-
-.portfolio {
-  font-size: 0.75rem;
-}
-.portfolio.block {
-  display: inline-block;
-  width: 100%;
-}
-@media (min-width: 30rem) {
-  .portfolio.block {
-    width: 30%;
-  }
-}
-.portfolio .link {
-  display: block;
-  margin: 2em 0 0 0;
-  color: #555;
-  letter-spacing: 2px;
-  font-size: 12px;
-}
-.portfolio p {
-  font-size: inherit;
-  color: #343436;
-  opacity: 0.7;
 }
